@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>HTML Form</title>
+</head>
+<body>
+    <h1 class="main-header">Account Application Form.</h1>
+    <Form>
+        <fieldset class="sub-container" id="basic-details">
+        <h2 class="sub-heading">Personal Information</h2>
+
+        <label for="User-firstname">First Name:</label>
+        <input type="text"
+        placeholder="First Name"
+        id="User-firstname"
+        name="User-firstname"
+        required/>
+        <br><br>
+        <label for="User-lastname">Last Name:</label>
+        <input type="text"
+        placeholder="Last Name"
+        id="User-Lastname"
+        name="User-Lastname"
+        required/>
+        <br><br>
+        <label for="DOB" class="standard-label">
+            Date of Birth<span class="required">*</span>
+            <input class="standard-input" 
+            type="date" 
+            name="DOB" id="DOB" 
+            required>
+        </label>
+        <br><br>
+        <label for="User-number">MobileNumber:</label>
+        <input type="text"
+        placeholder="MobileNumber"
+        pattern="[6789][0-9]{9}"
+        id="User-number"
+        name="User-number"
+        required/>
+        <br><br>
+        <label for="Gender">Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+        <br><br>
+        <label for="User-fathername">Father Name:</label>
+        <input type="text"
+        placeholder="Father Name"
+        id="User-firstname"
+        name="User-firstname"
+        required/>
+        <br><br>
+        <label for="User-mothername">Mother Name:</label>
+        <input type="text"
+        placeholder="Mother Name"
+        id="User-firstname"
+        name="User-firstname"
+        required/>
+        <br><br>
+        <label for="email-address" class="standard-label">
+            Email<span class="required">*</span>
+            <input class="standard-input" 
+            id="email-address" type="email" 
+            placeholder="Your email address..." required>
+        </label>
+        <br><br>
+        <label for="User-Aadhar">Aadhar:</label>
+        <input type="text"
+        placeholder="Aadhar"
+        id="User-Aadhar"
+        name="User-Aadhar"
+        required/>
+        <br><br>
+        <label for="line" class="standard-labe">
+            Address line <span class="required">*</span>
+            <input class="standard-input" type="text" required>
+          </label>
+          <label for="town-city" class="standard-label">
+            Town/City<span class="required">*</span>
+            <input class="standard-input" type="text" required>
+          </label>
+          <label for="county" class="standard-label">
+            County
+            <input class="standard-input" type="text">
+          </label>
+          <label for="postcode" class="standard-label">
+            Post Code<span class="required">*</span>
+            <input class="standard-input" type="text" maxlength="8" required>
+          </label>
+         <br><br> 
+        </fieldset>
+         <fieldset class="sub-container" id="basic-details">
+            <h2 class="sub-heading">Account Information</h2>
+        <label for="User-accounttype">Account type:</label>
+        <select  id="account-select" class="standard-select" required>
+            <option value="select" disabled selected>Choose Account</option>
+            <option value="basic-current">Basic Account</option>
+            <option value="premium-current">Premium Account</option>
+            <option value="instant-saver">Savings Account</option>
+          </select>
+          <br><br>
+          <label for="User-accounttype">Account Category:</label>
+          <select  id="Account Category" class="standard-select" required>
+            <option value="select" disabled selected>Account Category</option>
+            <option value="Individual">Individual</option>
+            <option value="Join">Joint</option>
+          </select>
+          <br><br>
+          <label for="Service">Service required:</label>
+        <input type="radio" name="Service" value="male"> Debit card
+        <input type="radio" name="Service" value="female"> Credit card
+        <input type="radio" name="Service" value="female"> both
+        <br><br>
+        <label for="User-Education">Education:</label>
+        <input type="text"
+        placeholder="Education"
+        id="User-Education"
+        name="User-Education"
+        required/>
+        <br><br>
+        <label for="User-Occupation">Occupation:</label>
+        <input type="text"
+        placeholder="Occupation"
+        id="User-Occupation"
+        name="User-Occupation"
+        required/>
+        <br><br>
+        <label for="User-Salary">Salary:</label>
+        <input type="text"
+        placeholder="Salary"
+        id="User-Salary"
+        name="User-Salary"
+        required/>
+        <br><br>
+        <button >SUBMIT</button>
+        </fieldset>
+    </Form>
+</body>
+</html>
